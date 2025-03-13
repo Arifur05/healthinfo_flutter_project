@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final homeScreenController =
-ChangeNotifierProvider((ref) => homeScreenProvider());
+final doctorsController =
+ChangeNotifierProvider((ref) => DoctorsProvider());
 
-class homeScreenProvider extends ChangeNotifier {
+class DoctorsProvider extends ChangeNotifier {
 
   int? _currentSelectedIndex;
 

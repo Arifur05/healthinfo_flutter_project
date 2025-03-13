@@ -72,7 +72,7 @@ class HomeScreen extends ConsumerWidget {
                         shrinkWrap: true,
                         itemBuilder: (context, index) {
                           return InkWell(
-                            onTap: (){ref.watch(homeScreenController).setSelectedIndex(index: index);},
+                            onTap: (){ref.watch(doctorsController).setSelectedIndex(index: index);},
                             child: Card(
                               child: Padding(
                                 padding: const EdgeInsets.all(10.0),
@@ -104,7 +104,7 @@ class HomeScreen extends ConsumerWidget {
                                         ),
                                       ],
                                     ),
-                                    ref.watch(homeScreenController).getSelectedIndex== index?
+                                    ref.watch(doctorsController).getSelectedIndex== index?
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
